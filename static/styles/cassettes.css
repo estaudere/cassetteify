@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam&family=Permanent+Marker&family=Smooch&family=Splash&display=swap');
+
+body {
+  background-color: lightskyblue;
+}
+
+.cassettes {
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.cassette {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  margin: 1px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: darkgray;
+  border-radius: 5px;
+/*   background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%); */
+}
+
+p {
+  width: 90%;
+  position: absolute;
+  top: 10px;
+  font-size: 1.7em;
+  height: 45px;
+  margin: auto;
+}
+
+/* CASSETTE 1 */
+
+.cassette[data-num="1"] {
+  font-family: 'Permanent Marker';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      white 3%, 
+      white 10%,
+      red 10%,
+      red 15%,
+      white 15%,
+      white 80%,
+      dimgray 80%,
+      dimgray 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="1"]::after {
+  position: absolute;
+  content: '46';
+  top: 0;
+  font-family: sans-serif;
+  color: red;
+  top: 7px;
+  left: 335px;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+/* CASSETTE 2 */
+
+.cassette[data-num="2"] {
+  font-family: 'Bebas Neue';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      lightyellow 3%, 
+      lightyellow 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="2"] > p {
+  font-size: 2.1em;
+  top: 9px;
+  left: 120px;
+}
+
+/* CASSETTE 3 */
+
+.cassette[data-num="3"] {
+  font-family: 'Kalam';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      blue 3%, 
+      blue 15%,
+      crimson 15%,
+      crimson 17%,
+      white 17%,
+      white 83%,
+      crimson 83%,
+      crimson 85%,
+      blue 85%,
+      blue 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="3"]::after {
+  position: absolute;
+  content: '90';
+  transform: rotate(-90deg);
+  top: 8px;
+  font-family: sans-serif;
+  color: crimson;
+  left: 343px;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.cassette[data-num="3"] > p {
+  font-size: 2.1em;
+  top: 7px;
+  left: 30px;
+}
+
+/* CASSETTE 4 */
+
+.cassette[data-num="4"] {
+  font-family: 'Splash';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      white 3%, 
+      white 7%,
+      red 7%,
+      red 8%,
+      white 8%,
+      white 10%,
+      red 10%,
+      red 17%,
+      white 17%,
+      white 19%,
+      red 19%,
+      red 20%,
+      white 20%,
+      white 97%,
+      transparent 97%);
+}
+
+.cassette[data-num="4"] > p {
+  top: 7px;
+  left: 5px;
+}
+
+/* CASSETTE 5 */
+
+.cassette[data-num="5"] {
+  font-family: 'Smooch';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      white 3%, 
+      white 10%,
+      yellow 10%,
+      yellow 15%,
+      white 15%,
+      white 80%,
+      dimgray 80%,
+      dimgray 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="5"]::after {
+  position: absolute;
+  content: '90';
+  top: 0;
+  font-family: sans-serif;
+  color: yellow;
+  top: 7px;
+  left: 335px;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+/* CASSETTE 6 */
+
+.cassette[data-num="6"] {
+  font-family: 'Kalam';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      blue 3%, 
+      blue 15%,
+      crimson 15%,
+      crimson 17%,
+      white 17%,
+      white 83%,
+      crimson 83%,
+      crimson 85%,
+      blue 85%,
+      blue 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="6"]::after {
+  position: absolute;
+  content: '60';
+  transform: rotate(-90deg);
+  top: 8px;
+  font-family: sans-serif;
+  color: crimson;
+  left: 343px;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.cassette[data-num="6"] > p {
+  font-size: 2.1em;
+  top: 7px;
+  left: 30px;
+}
+
+/* CASSETTE 7 */
+
+.cassette[data-num="7"] {
+  font-family: 'Permanent Marker';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      white 3%, 
+      white 7%,
+      red 7%,
+      red 8%,
+      white 8%,
+      white 10%,
+      red 10%,
+      red 17%,
+      white 17%,
+      white 19%,
+      red 19%,
+      red 20%,
+      white 20%,
+      white 97%,
+      transparent 97%);
+}
+
+.cassette[data-num="7"] > p {
+  top: 7px;
+  left: 5px;
+}
+
+/* CASSETTE 8 */
+
+.cassette[data-num="8"] {
+  font-family: 'Permanent Marker';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      gainsboro 3%, 
+      gainsboro 10%,
+      red 10%,
+      red 15%,
+      gainsboro 15%,
+      gainsboro 80%,
+      dimgray 80%,
+      dimgray 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="8"]::after {
+  position: absolute;
+  content: '46';
+  top: 0;
+  font-family: sans-serif;
+  color: red;
+  top: 7px;
+  left: 335px;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+/* CASSETTE 9 */
+
+.cassette[data-num="9"] {
+  font-family: 'Smooch';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      white 3%, 
+      white 10%,
+      yellow 10%,
+      yellow 15%,
+      white 15%,
+      white 80%,
+      dimgray 80%,
+      dimgray 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="9"]::after {
+  position: absolute;
+  content: '90';
+  top: 0;
+  font-family: sans-serif;
+  color: yellow;
+  top: 7px;
+  left: 335px;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+/* CASSETTE 10 */
+
+.cassette[data-num="10"] {
+  font-family: 'Bebas Neue';
+  background-image: linear-gradient(to bottom, black 0%, dimgrey 5%, transparent 10%, transparent 95%, dimgrey 100%),
+    linear-gradient(to right, gainsboro 0%, transparent 1%, transparent 99%, gainsboro 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      transparent 3%, 
+      lightyellow 3%, 
+      lightyellow 97%, 
+      transparent 97%);
+}
+
+.cassette[data-num="10"] > p {
+  font-size: 2.1em;
+  top: 9px;
+  left: 120px;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Top Artists</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/cassettes.css') }}">
+</head>
+<body>
+    <div class="cassettes">
+        {% for artist in artists["items"] %}
+        <div class="cassette" data-num={{ loop.index }} data-artist="{{ artist["name"] }}">
+            <p>{{ artist["name"] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
